@@ -10,6 +10,7 @@ body {
 }
 
 section {
+    min-width: 500px;
     display:grid;
     grid-template-columns: 1fr;
     padding: 20px;
@@ -90,7 +91,7 @@ dialog {
 
 @media screen and (min-width: 700px) {
     section {
-        grid-template-columns: 1 fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     nav a {
         display: none;
