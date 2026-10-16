@@ -104,8 +104,17 @@ dialog {
         grid-template-columns: 1fr 1fr;
     }
     nav a {
-        display: none;
+        display:block;
         flex-direction: column;
+        background-color: #427fd5;
+        padding: 20px auto;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .hide a {
+        display:none;
     }
 }
 
