@@ -19,18 +19,28 @@ section {
 }
 
 .text-menu {
-    display:block;
+    display:inline-block;
     cursor: pointer;
     padding:10px 0;
+    border: none;
+    background-color: #427fd5;
+    font-family: "Eagle Lake", serif;
+    color: white;
+    font-size: 20px;
 }
 
 nav a {
-    display:none;
+    display:block;
     flex-direction: column;
     background-color: #427fd5;
     padding: 20px auto;
     color: white;
     text-align: center;
+    font-size: 20px;
+}
+
+.hide a {
+    display:none;
 }
 
 nav a:hover {
