@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link href="recipes.css" rel="stylesheet">
+    <script src="recipes.js" defer></script>
     
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
@@ -32,28 +33,14 @@
             <img class="logo" src="images/recipe-book.png" alt="recipe book">
             <h1>Recipe Book</h1>
         </section>
-        <form action="/search" method="GET" class="search-form" role="search">
+        <form id="search-form" class="search-form" role="search">
             <input type="search" name="q" class="search-input" placeholder="Find a recipe" aria-label="Search" required>
             <button type="submit" class="search-btn" aria-label="Submit search">
                 <img class="search" src="images/search.svg" alt="Search">
             </button>
         </form>
     </header>
-    <main class="card">
-        <img src="images/apple-crisp.jpg" alt="image of apple crisp in a bowl with a scoop of ice-cream">
-        <div class="content">
-            <span class="category">Dessert</span>
-            <h2>Apple Crisp</h2>
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>
-            <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-        </div>
-    </main>
+    <main id="recipe-container"></main>
     <footer>
         <a class="link" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                           
         <div class="social">
